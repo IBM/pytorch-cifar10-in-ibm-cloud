@@ -1,0 +1,37 @@
+model_definition:
+  framework:
+#framework name and version (supported list of frameworks available at 'bx ml list frameworks')
+    name: pytorch
+    version: 0.3
+#name of the training-run
+  name: cifar10 in pytorch
+#Author name and email
+  author:
+    name: John Doe
+    email: johndoe@in.ibm.com
+  description: This is running cifar training on multipple models
+  execution:
+#Command to execute -- see script parameters in later section !!
+    command: python3 main.py --cifar_path ${DATA_DIR}/cifar10
+      --checkpoint_path ${RESULT_DIR} --epochs 10
+    compute_configuration:
+#Valid values for name - k80/k80x2/k80x4/p100/p100x2/v100/v100x2
+      name: k80
+training_data_reference:
+  name: training_data_reference_name
+  connection:
+    endpoint_url: "https://s3-api.us-geo.objectstorage.service.networklayer.com"
+    aws_access_key_id: < from cloud portal >
+    aws_secret_access_key: < from cloud portal > 
+  source:
+    bucket: < bucket name >
+  type: s3
+training_results_reference:
+  name: training_results_reference_name
+  connection:
+    endpoint_url: "https://s3-api.us-geo.objectstorage.service.networklayer.com"
+    aws_access_key_id: < from cloud portal >
+    aws_secret_access_key: < from cloud portal > 
+  target:
+    bucket: < bucket name >
+  type: s3
