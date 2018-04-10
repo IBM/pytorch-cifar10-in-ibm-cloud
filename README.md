@@ -32,7 +32,7 @@ optional arguments:
 
 ## How can I run code on IBM Watson Studio (for free) ?
 
-Below are the steps to setup your account to run your ML training runs in the cloud on different numbers and types of GPUs. After setup, you will be able to train your machine learning models on Watson studio in less than a minute! 
+Below are the steps to setup your account to run your ML training runs in the cloud on different numbers and types of GPUs. After setup (steps 1-6), you will be able to train your machine learning models on Watson studio in less than a minute! If you already have your environment setup, start at step 7.
 
 If you are interested in Watson Studio in general we recommend to read more about it here: [https://www.ibm.com/cloud/watson-studio](https://www.ibm.com/cloud/watson-studio)
 
@@ -55,7 +55,7 @@ Now to run the code on Watson, all you need is an IBM Cloud account and a cloud 
 
 Visit [https://console.bluemix.net/](https://console.bluemix.net/) to sign up!
 
-### Step 3: Setup local machine (only needed once)
+### Step 3: Setup local machine
 
 #### 3.1. Install `bx`
 
@@ -182,7 +182,7 @@ export ML_PASSWORD=$password
 export ML_ENV=$url
 ```
 
-### Step 6: Upload your dataset (CIFAR10) to your bucket:
+### Step 6: Upload your dataset (CIFAR10) to your bucket: (Last setup step)
 
 This will upload our dataset to the bucket we created:
 
