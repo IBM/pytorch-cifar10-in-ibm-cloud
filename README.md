@@ -140,7 +140,7 @@ Copy these keys! You'll need them again a little later.
 
 #### 4.3. Create a bucket:
 
-Now, we make a bucket and name it something unique! Buckets are named globally, which means that only one IBM Cloud account can have a bucket with a particular name.
+Now, we make a bucket and name it something unique! Buckets are named globally, which means that only one IBM Cloud account can have a bucket with a particular name. Please choose a name without any spaces or underscores.
 
 ```
 bucket_name=<DEFINE_A_NAME>
